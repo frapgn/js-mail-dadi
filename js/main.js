@@ -29,6 +29,8 @@ if (existingEmail) {
     console.log('Email inesistente');
 }
 
+console.log('-------------------');
+
 // Gioco dei dadi, chi fa di più vince
 
 // Untente1 lancia il primo dado da 6, ottengo il primo punteggio
@@ -37,16 +39,34 @@ if (existingEmail) {
 // Altrimenti se il primo punteggio < del secondo, Utente2 vince
 // Altrimenti sono pari
 
-// var firstDice = Math.ceil(Math.random() * 10);
-// console.log('Dado1: ' + firstDice);
-//
-// var secondDice = Math.ceil(Math.random() * 10);
-// console.log('Dado2: ' + secondDice);
-//
-// if (firstDice < secondDice) {
-//     console.log('Il Dado2 vince');
-// } else if (firstDice > secondDice) {
-//     console.log('Il Dado 1 vince');
-// } else {
-//     console.log('Parità');
-// }
+// Dado da 10
+console.log('DADI DA 10 FACCE');
+var firstDice10 = Math.ceil(Math.random() * 10);
+console.log('Dado1: ' + firstDice10);
+var secondDice10 = Math.ceil(Math.random() * 10);
+console.log('Dado2: ' + secondDice10);
+
+if (firstDice10 < secondDice10) {
+    console.log('Il Dado2 vince');
+} else if (firstDice10 > secondDice10) {
+    console.log('Il Dado 1 vince');
+} else {
+    console.log('Parità');
+}
+
+console.log('-------------------');
+
+// Dado da 6
+console.log('DADI DA 6 FACCE');
+var firstDice6 = Math.floor(Math.random() * 6) + 1;
+console.log('Dado1: ' + firstDice6);
+var secondDice6 = Math.floor(Math.random() * 6) + 1;
+console.log('Dado2: ' + secondDice6);
+
+if (firstDice6 < secondDice6) {
+    console.log('Il Dado2 vince');
+} else if (firstDice6 > secondDice6) {
+    console.log('Il Dado 1 vince');
+} else {
+    console.log('Parità');
+}
