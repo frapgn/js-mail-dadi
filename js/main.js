@@ -15,11 +15,11 @@ authEmailAddrList = [
 ];
 
 var userEmail = prompt('Inserisci il tuo indirizzo email');
-var existingEmail;
+var existingEmail = false;
 
 for (var i = 0; i < authEmailAddrList.length; i++) {
-    if (userEmail === authEmailAddrList[i] ) {
-        existingEmail = userEmail;
+    if (userEmail == authEmailAddrList[i] ) {
+        existingEmail = true;
     }
 }
 
